@@ -3,10 +3,21 @@ html, body {
     padding: 0;
 }
 body {
-    background-color: lightblue;
+    background-color: lightgray;
 }
 h1 {
-    font-size: 34px;
-    color: blue;
-    transition: scale(1.2) 2s;
+    font-size: 62px;
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    animation: move 3s infinite ease-in-out ;
+}
+p{
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@keyframes move{
+    0%{transform: translateX(0px)}
+    50%{transform: translateX(200px)}
+    100%{transform: translateX(0px)}
 }
